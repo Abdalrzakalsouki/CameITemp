@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Weather details</title>
+    <link rel="icon" href="/img/cloudy.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+      {{>header}}
+      <div class="container">
+   <h1> {{title}}</h1> 
+   <section>
+       <div class="table-responsive">
+       <table class="table table-hover table-striped table-bordered">
+          <thead>
+              <tr>
+                  <th>City name</th>
+                  <th>State</th>
+                  <th>Description</th>
+                  <th>Tempreature</th>
+                  <th>feels-like</th>
+                  <th>Pressure</th>
+                  <th>Humidity</th>
+                  <th>Wind speed</th>
+                  <th>Wind dog</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td class="details_tr"></td>
+                  <td class="details_tr"></td>
+                  <td class="details_tr"></td>
+                  <td class="details_tr"></td>
+                  <td class="details_tr"></td>
+                  <td class="details_tr"></td>
+                  <td class="details_tr"></td>
+                  <td class="details_tr" ></td>
+                  <td class="details_tr"></td>
+              </tr>
+          </tbody>
+       </table >
+       </div>
+       </div>
+   </section>
+   <button onclick="window.location.href= '/'"> Home</a></button>
+      {{>footer}}
+   <script src="./js/details.js"></script>
+  </body>
+</html>
